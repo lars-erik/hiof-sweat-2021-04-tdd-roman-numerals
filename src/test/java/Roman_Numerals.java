@@ -26,7 +26,12 @@ public class Roman_Numerals {
             Arguments.of("VII", 7),
             Arguments.of("VIII", 8),
             Arguments.of("IX", 9),
-            Arguments.of("X", 10)
+            Arguments.of("X", 10),
+            Arguments.of("XII", 12),
+            Arguments.of("XIX", 19),
+            Arguments.of("XXIV", 24),
+            Arguments.of("XXVIII", 28),
+            Arguments.of("XXXIX", 39)
         );
     }
 }
