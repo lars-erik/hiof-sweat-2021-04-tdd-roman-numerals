@@ -20,7 +20,8 @@ public class Roman_Numerals {
             Arguments.of("I", 1),
             Arguments.of("II", 2),
             Arguments.of("III", 3),
-            Arguments.of("IV", 4)
+            Arguments.of("IV", 4),
+            Arguments.of("V", 5)
         );
     }
 }
