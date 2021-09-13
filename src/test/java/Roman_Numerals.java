@@ -24,7 +24,8 @@ public class Roman_Numerals {
             Arguments.of("V", 5),
             Arguments.of("VI", 6),
             Arguments.of("VII", 7),
-            Arguments.of("VIII", 8)
+            Arguments.of("VIII", 8),
+            Arguments.of("IX", 9)
         );
     }
 }
