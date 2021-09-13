@@ -17,6 +17,7 @@ public class Numerals {
     }
 
     public static Map<Integer, String> numerals = new LinkedHashMap<>() {{
+        put(9, "IX");
         put(5, "V");
         put(4, "IV");
         put(1, "I");
