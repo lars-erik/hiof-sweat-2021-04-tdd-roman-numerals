@@ -1,24 +1,24 @@
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class Numerals {
 
     public static String toRoman(int number) {
         String result = "";
 
-        while (number >= 5) {
-            result += "V";
-            number -= 5;
-        }
-
-        while (number >= 4) {
-            result += "IV";
-            number -= 4;
-        }
-
-        while (number >= 1) {
-            result += "I";
-            number -= 1;
+        for(Map.Entry<Integer, String> numeral: numerals.entrySet()) {
+            while (number >= numeral.getKey()) {
+                result += numeral.getValue();
+                number -= numeral.getKey();
+            }
         }
 
         return result;
     }
 
+    public static Map<Integer, String> numerals = new LinkedHashMap<>() {{
+        put(5, "V");
+        put(4, "IV");
+        put(1, "I");
+    }};
 }
