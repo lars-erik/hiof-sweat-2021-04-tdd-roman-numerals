@@ -5,14 +5,17 @@ public class Numerals {
 
         if (number >= 1) {
             result += "I";
+            number -= 1;
         }
 
         if (number >= 1) {
             result += "I";
+            number -= 1;
         }
 
         if (number >= 1) {
             result += "I";
+            number -= 1;
         }
 
         return result;
