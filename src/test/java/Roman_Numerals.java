@@ -8,5 +8,6 @@ public class Roman_Numerals {
     public void Converts_From_Decimal_To_Roman()
     {
         assertEquals("I", Numerals.toRoman(1));
+        assertEquals("II", Numerals.toRoman(2));
     }
 }
