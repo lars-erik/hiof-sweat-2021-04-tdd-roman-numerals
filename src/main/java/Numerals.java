@@ -1,15 +1,21 @@
 public class Numerals {
 
     public static String toRoman(int number) {
+        String result = "";
+
         if (number == 3) {
-            return "III";
+            result = "III";
         }
 
         if (number == 2) {
-            return "II";
+            result = "II";
         }
 
-        return "I";
+        if (number == 1) {
+            result = "I";
+        }
+
+        return result;
     }
 
 }
