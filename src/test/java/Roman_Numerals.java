@@ -9,5 +9,6 @@ public class Roman_Numerals {
     {
         assertEquals("I", Numerals.toRoman(1));
         assertEquals("II", Numerals.toRoman(2));
+        assertEquals("III", Numerals.toRoman(3));
     }
 }
