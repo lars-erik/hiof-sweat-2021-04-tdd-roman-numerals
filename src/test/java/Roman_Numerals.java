@@ -1,14 +1,25 @@
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Roman_Numerals {
 
-    @Test
-    public void Converts_From_Decimal_To_Roman()
+    @ParameterizedTest
+    @MethodSource("numbers")
+    public void Converts_From_Decimal_To_Roman(String expected, int input)
     {
-        assertEquals("I", Numerals.toRoman(1));
-        assertEquals("II", Numerals.toRoman(2));
-        assertEquals("III", Numerals.toRoman(3));
+        assertEquals(expected, Numerals.toRoman(input));
+    }
+
+    public static Stream numbers() {
+        return Stream.of(
+            Arguments.of("I", 1),
+            Arguments.of("II", 2),
+            Arguments.of("III", 3)
+        );
     }
 }
