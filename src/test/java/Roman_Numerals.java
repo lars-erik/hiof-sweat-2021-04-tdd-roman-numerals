@@ -31,7 +31,11 @@ public class Roman_Numerals {
             Arguments.of("XIX", 19),
             Arguments.of("XXIV", 24),
             Arguments.of("XXVIII", 28),
-            Arguments.of("XXXIX", 39)
+            Arguments.of("XXXIX", 39),
+            Arguments.of("MCMXC", 1990),
+            Arguments.of("MMVIII", 2008),
+            Arguments.of("XCIX", 99),
+            Arguments.of("XLVII", 47)
         );
     }
 }
